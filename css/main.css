@@ -1,0 +1,332 @@
+/* BARLOW SEMI CONDENSED */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+
+    /* PRIMARY COLORS  */
+   
+        --moderateViolet: hsl(263, 55%, 52%);
+        --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+        --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+        --white: hsl(0, 0%, 100%);
+
+    /* Neutral COLORS  */
+
+        --lightGray: hsl(0, 0%, 81%);
+        --lightGrayishBlue: hsl(210, 46%, 95%);
+
+    /* OPACITY  */
+        --opacity50:.5; /* For graduate and person name neutral colors */
+        --opacity70:.7; /* Same colors as well  */
+
+    /* FONT SIZE */
+
+        --fSize:13px;
+
+    /* FONT WEIGHT */
+        --500 : 500;
+        --600 : 600;
+
+    /* FONT FAMILY  */
+        --barlowSemiCondensed : 'Barlow Semi Condensed';
+
+    /* WIDTH */
+
+        --1440 : 1440px;
+        --375 : 375px;
+}
+
+
+body{
+    font-family: var(--barlowSemiCondensed);
+    font-size: var(--fSize);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--lightGrayishBlue);
+    padding-inline: 1em;
+}
+
+
+.graduate--comments {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "a a b c"
+    "a a b c"
+    "d e e c"
+    "d e e c"
+    ;
+    max-width: var(--1440);
+    gap:1em;
+}
+
+article {
+    padding-left:35px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    padding-right: 11px;
+}
+
+
+#daniel_clifford {
+    grid-area: a;
+    background-color: var(--moderateViolet);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 60% 5%;
+    background-size: 20%;
+}
+
+#daniel_clifford .main--comments{
+    padding-bottom: .8em;
+}
+
+
+.daniel_patrick {
+display: flex;
+}
+
+.daniel_patrick__img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:2px solid #A47AE1;
+}
+
+.daniel_patrick__name {
+    color:var(--white);
+    line-height: 1.1em;
+    position: relative;
+    left: 15px;
+    top:1px;
+}
+
+.daniel__patrick blockquote {
+position: relative;
+top:1em;
+left:0;
+
+}
+ .daniel__patrick .main--title {
+    color: var(--white);
+    font-size:1.4em;
+    padding-bottom: .6em;
+}
+
+.daniel__patrick .graduate__mention {
+    color:var(--lightGray);
+    opacity: var(--opacity50);
+    font-size: 11px;
+}
+
+.daniel__patrick .main--comments {
+    color:var(--lightGray);
+    opacity: var(--opacity70);
+}
+#jonathan_walters {
+    grid-area: b;
+    background-color: var(--veryDarkGrayishBlue);
+}
+.daniel_patrick {
+    display: flex;
+    }
+.jonathan_jeanette--banner__img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#jonathan__name {
+    color:var(--white);
+}
+.jonathan_jeanette__name {
+
+    line-height: 1.1em;
+    position: relative;
+    left: 43px;
+    top:-32px;
+}
+
+
+
+.jonathan__jeanette blockquote{
+    position: relative;
+    top:-14px;
+}
+
+.jonathan__jeanette blockquote .main--comments {
+    position: relative;
+    top:23px;
+}
+#jonathan_walters .main--title {
+    color: var(--white);
+    font-size:1.4em;
+    padding-bottom: .6em;
+}
+
+#jeannette_harmon .main--title {
+    color: var(--veryDarkBlackishBlue);
+    font-size:1.4em;
+    padding-bottom: .6em;
+}
+
+.jonathan_jeanette__name .graduate__mention {
+    color:var(--lightGray);
+    opacity: var(--opacity50);
+    font-size: 11px;
+}
+
+#jonathan_walters .main--comments {
+    color:var(--lightGray);
+    opacity: var(--opacity50);
+}
+
+#jeannette_harmon .main--comments {
+    color:var(--lightGray);
+}
+
+#kira_whittle {
+    grid-area: c;
+    background-color: var(--white);
+}
+
+#jeannette_harmon {
+    grid-area: d;
+    background-color: var(--white);
+}
+
+#patrick_abrams {
+    grid-area: e;
+    background-color: var(--veryDarkBlackishBlue);
+}
+
+
+/* KIRA WHITTLE  */
+
+.kira_whittle--banner {
+    display: flex;
+    }
+    
+    .kira_whittle--banner__img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .kira_whittle--banner__name {
+        color:var(--veryDarkBlackishBlue);
+        line-height: 1.1em;
+        position: relative;
+        left: 15px;
+        top:1px;
+    }
+    
+    #kira_whittle blockquote {
+    position: relative;
+    top:19px;
+    left:0;
+    
+    }
+    #kira_whittle .main--title {
+        color: var(--veryDarkBlackishBlue);
+        font-size:1.4em;
+        padding-bottom: .6em;
+    }
+    
+    #kira_whittle .graduate__mention {
+        color:var(--lightGray);
+        opacity: var(--opacity50);
+        font-size: 11px;
+    }
+    
+    #kira_whittle .main--comments {
+        color:var(--lightGray);
+       
+    }
+
+     @media screen and (max-width:1103px) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        article {
+            width: 75%;
+        }
+
+        .graduate--comments {
+            padding-top: 6em;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+            grid-template-areas:
+            "a a a a a"
+            "b b b b b"
+            "d d d d d"
+            "e e e e e"
+            "c c c c c"
+            ;
+            max-width: var(--1440);
+            gap:1em;
+            place-items: center;
+        }
+
+  
+
+        .daniel__patrick {
+            height: 480px;
+            overflow-y: scroll;
+        }
+
+        .daniel__patrick .main--title {
+            font-size: 1.8em;
+            line-height: 1.6em;
+        }
+
+        .daniel__patrick .main--comments {
+            font-size: 1.8em;
+            line-height: 1.3em;
+        }
+
+        .jonathan__jeanette blockquote .main--comments {
+            font-size: 1.8em;
+        }
+
+        .jonathan__jeanette blockquote .main--title {
+            font-size: 1.8em;
+        }
+
+        #jonathan_walters {
+            height: 343px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: relative;
+            top:-60px;
+
+        }
+
+        #jeannette_harmon {
+            height: 292px;
+            position: relative;
+            bottom: 211px;
+        }
+
+        #patrick_abrams {
+            position: relative;
+            top:-293px;
+        }
+
+        #kira_whittle {
+            position: relative;
+            top:-298px;
+        }
+
+    } 
