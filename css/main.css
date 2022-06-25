@@ -78,7 +78,7 @@ article {
 #daniel_clifford {
     grid-area: a;
     background-color: var(--moderateViolet);
-    background-image: url(../images/bg-pattern-quotation.svg);
+    background-image: url('../images/bg-pattern-quotation.svg');
     background-repeat: no-repeat;
     background-position: 60% 5%;
     background-size: 20%;
